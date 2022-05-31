@@ -14,8 +14,11 @@ continent_list = list(df['continent'].unique())
 metric_list = list(df['metric'].unique())
 
 # filter the data to only the data we are plotting
-continent = st.selectbox(label = "Choose a continent", options = continent_list)
-metric = st.selectbox(label = "Choose a metric", options = metric_list)
+with st.sidebar:
+	st.subheader("Configure the plot")
+	continent = st.selectbox(label = "Choose a continent", options = continent_list)
+	metric = st.selectbox(label = "Choose a metric", options = metric_list)
+	show_data = st.checkbox(label = "Show the data used to generate this plot", value = False)
 df_filtered = df.query(f"continent=='{continent}' & metric=='{metric}'")
 
 # creating the plot
@@ -28,4 +31,5 @@ st.markdown(f"This plot shows the {metric} for countries in {continent}.")
 
 
 # Challenge - Display the data table used to create the plot
-st.dataframe(df_filtered)
+if show_data:
+	st.dataframe(df_filtered)
