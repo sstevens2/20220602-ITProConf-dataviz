@@ -10,7 +10,7 @@ This is a preview of the [Interactive Data Visualizations in Python Lesson](http
 
 ## To follow along: 
 - Sign-in to [GitHub](https://github.com/) or create an account.
-- Click the "Open in Gitpod" Button above.
+- Click the [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/sstevens2/20220602-ITProConf-dataviz), recommend right clicking and choosing open in new tab so you have the directions below still in a tab.
 - You will get screen asking if you want to continue with github credentails. Click "Continue" 
 - You will get pop-up about authorizing Gitpod to connect with GitHub. Choose the "Authorize gitpod-io" option.
 - Select editor option will pop up, choose VS Code - BROWSER option. Leave "Latest Release" unchecked and click green "Continue" button.
